@@ -1,0 +1,39 @@
+{
+  "rooms": [
+    {
+      "category": "react",
+      "name": "react",
+      "id": "react"
+    },
+    {
+      "category": "java",
+      "name": "java",
+      "id": "java"
+    },
+    {
+      "category": "html",
+      "name": "html",
+      "id": "html"
+    },
+    {
+      "category": "python",
+      "name": "python",
+      "id": "python"
+    },
+    {
+      "category": "angular",
+      "name": "angular",
+      "id": "angular"
+    },
+    {
+      "category": "csharp",
+      "name": "csharp",
+      "id": "csharp"
+    },
+    {
+      "category": "aws",
+      "name": "aws",
+      "id": "aws"
+    }
+  ]
+}
