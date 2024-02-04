@@ -53,10 +53,6 @@ const userSchema = mongoose.Schema({
 
   rooms: [
     {
-      category: {
-        type: String,
-        required: true,
-      },
       name: {
         type: String,
         required: true,
