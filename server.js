@@ -14,11 +14,7 @@ const app = express();
 
 app.use(morgan("dev"));
 
-app.use(
-  cors({
-    origin: "https://hey-community.vercel.app/",
-  })
-);
+app.use(cors({}));
 
 app.use(express.json({ limit: "50mb" }));
 
