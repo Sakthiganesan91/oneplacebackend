@@ -90,7 +90,7 @@ const verifyToken = async (req, res) => {
     });
   } catch (error) {
     res.status(403).json({
-      tokenValid: error,
+      tokenValid: false,
     });
   }
 };

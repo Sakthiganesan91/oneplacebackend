@@ -105,6 +105,7 @@ module.exports.updateQuery = async (req, res) => {
     const title = req.body.queryTitle;
     const description = req.body.queryDescription;
     const detailsWanted = req.body.queryDetails;
+    const updatedAt = new Date();
 
     const query = await Queries.findOneAndUpdate(
       { _id, roomId },
@@ -114,6 +115,7 @@ module.exports.updateQuery = async (req, res) => {
         title,
         description,
         detailsWanted,
+        updatedAt,
       }
     );
 
