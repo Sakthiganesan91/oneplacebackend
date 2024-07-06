@@ -14,7 +14,11 @@ const app = express();
 
 app.use(morgan("dev"));
 
-app.use(cors({}));
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.use(express.json({ limit: "50mb" }));
 
@@ -32,7 +36,4 @@ mongoose
     console.log("Error with Connecting to database", err);
   });
 
-/***
- *
- *  mongodb+srv://oneplaceadmin:oneplaceadmin@cluster0.tmcvyhu.mongodb.net/oneplacelearning?retryWrites=true&w=majority
- */
+// mongodb+srv://oneplaceadmin:oneplaceadmin@cluster0.tmcvyhu.mongodb.net/oneplacelearning?retryWrites=true&w=majority
